@@ -90,4 +90,45 @@ li {
 }
 .btn-primary:hover {
   background-color: #4C2F39;
+} 
+p{
+  font-size: 21px;
+  margin-top: 1rem;
+  font-weight: bold;
 }
+.send{
+  align-self: center;
+  background-color: #33B7A5;
+  display: flex;
+  justify-content: center;
+  margin:  10px auto;
+  font-size: 21px;
+ }
+.send a{
+  text-decoration: none;
+}
+.not{
+  visibility: hidden;
+  display: none;
+   }
+.scoreBtn{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; 
+}
+.showSubmitBtn {
+  background-color: #33B7A5; 
+}
+.getValue{ 
+  background-color: #33B7A5;
+
+}
+.btns{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1rem;
+}
+      
+  
+ 
