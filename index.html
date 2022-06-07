@@ -5,7 +5,7 @@
   <title>CodePen - Player vs Computer Tic-Tac-Toe</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href='https://fonts.googleapis.com/css?family=Lobster|Comfortaa:700,400' rel='stylesheet' type='text/css'><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-<link rel='stylesheet' href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+<link rel='stylesheet' href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'><link rel="stylesheet" href="static/style.css">
 
 </head>
 <body>
@@ -14,6 +14,31 @@
 <div class="row text-center" id="intro-section">
   <h1>Player vs Computer Tic-Tac-Toe</h1>
   <h2 class="message">Choose your player:</h2>
+  <!-- table to display realtime score-->
+  <table id="my_Table" class="table table-borderless table-striped table-earning">
+    <thead>
+      <tr>
+        <th>Wins</th>
+        <th>Losses</th>
+        <th>Draws</th>
+        
+    
+      </tr>
+      <tr>
+        <th id="Wins">0</th>
+        <th id="Losses">0</th>
+        <th id="Draws">0</th>
+        
+    
+      </tr>
+    
+    </thead>
+    <tbody>
+      <tr id="test"></tr>
+    </tbody>
+  </table>
+
+  
   <form action="#">
   <fieldset>
     <input type="radio" name="player-choice" id="player-choice-1" value="X" />
@@ -21,14 +46,31 @@
     <input type="radio" name="player-choice" id="player-choice-2" value="O" />
     <label for="player-choice-2">O</label>
   </fieldset>
+  
   <button id="reset" class="btn btn-primary">Reset</button>
   </form>  
 </div>
 <div class="row" id="grid-section">
   <ul id="grid"></ul>
 </div>
+<div>
+  <button style = "margin :50%; color: red;" id="close" >Close</button>
+</div>
+<!-- GameAnalytics -->
+<!--<script>
+  (function(w,d,a,m){var s='script';var g='GameAnalytics';w[g]=w[g]||function(){(w[g].q=w[g].q||[]).push(arguments)},a=d.createElement(s),m=d.getElementsByTagName(s)[0];a.async=1;a.src='http://download.gameanalytics.com/js/GameAnalytics-4.4.5.min.js';m.parentNode.insertBefore(a,m)})(window,document);
+  
+  GameAnalytics("setEnabledInfoLog", true);
+  GameAnalytics("initialize", "1c21cdd16af859fb261dae92cac8b37f", "3172d7d989160be9083da09ce535a2ffd59638d4");
+  </script> -->
+  <!-- End GameAnalytics -->
 <!-- partial -->
-  <script  src="./script.js"></script>
+<script src="static/GA-SDK-JAVASCRIPT-master/dist/GameAnalytics.js" ></script>
+<script src="static/GA-SDK-JAVASCRIPT-master/dist/GameAnalytics.min.js" ></script>
+  <script src="static/script.js"></script>
+  <script src="static/userdata.js"></script>
+ <!---- <script  src="./routing.js"></script>   --->
+ 
 
 </body>
 </html>
